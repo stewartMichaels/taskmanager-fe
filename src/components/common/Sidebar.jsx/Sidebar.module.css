@@ -1,0 +1,81 @@
+.sidebar {
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid #edf5fe;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.logo p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 10px;
+  cursor: pointer;
+  color: #000;
+  width: 100%;
+}
+
+.menuItem:focus {
+  background-color: rgba(67, 145, 237, 0.1);
+}
+
+.menuItem:active {
+  background-color: rgba(67, 145, 237, 0.1);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 70px;
+}
+
+.linkTitle {
+  text-decoration: none;
+  color: #707070;
+}
+
+.logoutItem {
+  position: absolute;
+  bottom: 0px;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  color: #cf3636;
+}
+
+.active {
+  background-color: rgba(67, 145, 237, 0.1);
+  color: #000;
+}
