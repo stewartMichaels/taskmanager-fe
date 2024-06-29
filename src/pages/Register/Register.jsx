@@ -25,8 +25,18 @@ const Register = () => {
 	const handleChange = (event) => {
 		setFormData({ ...formData, [event.target.name]: event.target.value });
 	};
-	const handleSubmit = async () => {
-		console.log(formData);
+	const handleSubmit = async (event) => {
+		event.preventDefault();
+		try {
+			const response = await fetch("http://localhost:8080/register", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(formData),
+			});
+			const data = await response.json();
+		} catch (error) {
+			console.log("Error: ", error);
+		}
 	};
 	function handleLogin() {
 		navigate("/");
